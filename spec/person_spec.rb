@@ -27,7 +27,7 @@ describe Person do
     expect(taylor.adult?).to eq false
   end
 
-  it 'gives pep talks to increase intensity_max'
+  it 'gives pep talks to increase intensity_max' do
 
     aurelia = Person.new({"name" => "Aurelia",
       "age" => 18, "intensity_max" => 5})
@@ -36,3 +36,4 @@ describe Person do
 
     expect(aurelia.intensity_max).to eq 6
   end
+end
